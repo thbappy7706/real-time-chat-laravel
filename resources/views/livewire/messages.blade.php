@@ -59,11 +59,11 @@
                     <div class="card-footer">
                         <form wire:submit.prevent="SendMessage">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-10">
                                     <input wire:model="message" class="form-control input shadow-none w-100 d-inline-block" placeholder="Type a message" required>
                                 </div>
 
-                                <div class="col-md-4">
+                                <div class="col-md-2">
                                     <button type="submit" class="btn btn-primary d-inline-block w-100"><i class="far fa-paper-plane"></i> Send</button>
                                 </div>
                             </div>
