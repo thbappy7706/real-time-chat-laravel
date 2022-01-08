@@ -19,6 +19,7 @@
     <link href="{{ asset('material') }}/css/material-dashboard.css" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{{ asset('material') }}/demo/demo.css" rel="stylesheet" />
+        @stack('styles')
     </head>
     <body class="{{ $class ?? '' }}">
         @auth()
@@ -149,6 +150,18 @@
         <!-- Material Dashboard DEMO methods, don't include it in your project! -->
         <script src="{{ asset('material') }}/demo/demo.js"></script>
         <script src="{{ asset('material') }}/js/settings.js"></script>
+
+        <script>
+            // Video tutorial/codealong here: https://youtu.be/fCpw5i_2IYU
+
+            $( '.friend-drawer--onhover' ).on( 'click',  function() {
+
+                $( '.chat-bubble' ).hide('slow').show('slow');
+
+            });
+
+            // Video tutorial/codealong here: https://youtu.be/fCpw5i_2IYU
+        </script>
         @stack('js')
     </body>
 </html>

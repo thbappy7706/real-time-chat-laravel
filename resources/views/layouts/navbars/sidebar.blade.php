@@ -20,35 +20,19 @@
 
             <li class="nav-item{{ $activePage == 'posts' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('posts.index') }}">
-                    <i class="material-icons">forum</i>
+                    <i class="material-icons">book</i>
                     <p>{{ __('Posts') }}</p>
                 </a>
             </li>
 
-            {{--      <li class="nav-item {{ ($activePage == 'admin' || $activePage == 'admin-management') ? ' active' : '' }}">--}}
-            {{--        <a class="nav-link" data-toggle="collapse" href="#adminExample" aria-expanded="true">--}}
-            {{--          <i><img style="width:25px" src="{{ asset('material') }}/img/laravel.svg"></i>--}}
-            {{--          <p>{{ __('Admin') }}--}}
-            {{--            <b class="caret"></b>--}}
-            {{--          </p>--}}
-            {{--        </a>--}}
-            {{--        <div class="collapse" id="adminExample">--}}
-            {{--          <ul class="nav">--}}
-            {{--            <li class="nav-item{{ $activePage == 'admin' ? ' active' : '' }}">--}}
-            {{--              <a class="nav-link" href="{{ route('admin.index') }}">--}}
-            {{--                --}}{{-- <span class="sidebar-mini"> AD </span> --}}
-            {{--                <span class="sidebar-normal">{{ __('Admin') }} </span>--}}
-            {{--              </a>--}}
-            {{--            </li>--}}
-            {{--            <li class="nav-item{{ $activePage == 'admin-management' ? ' active' : '' }}">--}}
-            {{--              <a class="nav-link" href="{{ route('admin.management') }}">--}}
-            {{--                --}}{{-- <span class="sidebar-mini"> UM </span> --}}
-            {{--                <span class="sidebar-normal"> {{ __('Admin Management') }} </span>--}}
-            {{--              </a>--}}
-            {{--            </li>--}}
-            {{--          </ul>--}}
-            {{--        </div>--}}
-            {{--      </li>--}}
+            <li class="nav-item{{ $activePage == 'chat' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('users.chat') }}">
+                    <i class="material-icons">forum</i>
+                    <p>{{ __('Lets Chat') }}</p>
+                </a>
+            </li>
+
+
 
 
 
